@@ -1,0 +1,1 @@
+insert  into user_detail (id,username,password,firstname,lastname,mobile,email,address,dob) values (7,'TeresaB','password1','Teresa','Jacob','7201367894','contact@roytuts.com','','30-08-1986');
