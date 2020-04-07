@@ -21,6 +21,7 @@ public class RegistrationController {
   @RequestMapping(value = "/register", method = RequestMethod.GET)
   public ModelAndView showRegister(HttpServletRequest request, HttpServletResponse response) {
     ModelAndView mav = new ModelAndView("register");
+    
     mav.addObject("user", new User());
 
     return mav;
@@ -31,6 +32,7 @@ public class RegistrationController {
       @ModelAttribute("user") User user) {
 
     userService.register(user);
+    
     return new ModelAndView("welcome", "firstname", user.getFirstname());
   }
 }
