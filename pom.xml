@@ -92,6 +92,7 @@
     </dependency>
   </dependencies>
 
+
   <build>
     <finalName>springmvc-user-reg-login</finalName>
     <sourceDirectory>src/main/java</sourceDirectory>
